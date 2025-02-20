@@ -6,14 +6,16 @@ import { H1 } from "@ui/Typography";
 
 import styles from "./styles.module.css";
 import { buttonStyles, imageStyles } from "../lib/styles";
+import Link from "next/link";
 
 type InfoSectionProps = {
   title: string;
+  buttonLabel: string;
+  href: string;
   label?: string;
-  buttonLabel?: string;
 };
 
-const InfoSection = ({ title, buttonLabel }: InfoSectionProps) => {
+const InfoSection = ({ title, buttonLabel, href }: InfoSectionProps) => {
   return (
     <main className={styles.info}>
       <div className={styles.info__block}>
@@ -37,7 +39,9 @@ const InfoSection = ({ title, buttonLabel }: InfoSectionProps) => {
           )}
         >
           <H1>{title}</H1>
-          <PrimaryButton style={buttonStyles}>{buttonLabel}</PrimaryButton>
+          <Link href={href} className={styles.info__link}>
+            <PrimaryButton style={buttonStyles}>{buttonLabel}</PrimaryButton>
+          </Link>
         </div>
       </div>
     </main>

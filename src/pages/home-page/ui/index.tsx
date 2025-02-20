@@ -6,6 +6,7 @@ const HomePage = () => {
     <InfoSection
       title={`Who wants to be \na millionaire?`}
       buttonLabel="Start"
+      href="/"
     />
   );
 };

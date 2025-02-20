@@ -51,6 +51,12 @@
     position: relative;
 }
 
+.info__link{
+    width: 100%;
+    max-width: 29.6rem;
+    text-decoration: none;
+}
+
 @media screen and (min-width: 1024px) {
     .info{
         padding: 0 0 5%;

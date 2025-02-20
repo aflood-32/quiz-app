@@ -1,7 +1,6 @@
 import { CSSProperties } from "react";
 
 const buttonStyles: CSSProperties = {
-  maxWidth: "29.6rem",
   width: "100%",
 };
 
