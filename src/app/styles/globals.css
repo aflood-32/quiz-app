@@ -1,0 +1,29 @@
+@import 'modern-normalize';
+
+:root {
+  --color-home-background: #ffffff;
+  --color-home-polygon: #FFF3EB;
+  /*--color-page-background: #ffffff;*/
+  --color-main: #FF8B37;
+  --color-main-dark: #E87928;
+  --color-main-light: #FFAC70;
+  --color-success: #47D867;
+  --color-danger: #EC6259;
+  --color-border: #D0D0D8;
+  --color-button-label: #fff;
+  --color-title: #1C1C21;
+
+  --button-border-radius: 0.8rem;
+}
+
+html {
+  font-size: 62.5%;
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+}
