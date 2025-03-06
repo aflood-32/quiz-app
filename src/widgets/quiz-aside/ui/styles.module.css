@@ -9,12 +9,12 @@
     padding: 6.4rem 0 3.2rem;
     pointer-events: none;
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
 }
 
 .quiz_aside[data-open="true"]{
     opacity: 1;
     pointer-events: auto;
+    transition: opacity 0.2s ease-in-out;
 }
 
 

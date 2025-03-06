@@ -10,8 +10,5 @@ export async function GET() {
     ? (JSON.parse(playerProgressCookie?.value) as PlayerProgress)
     : null;
 
-  console.log("playerProgressCookie", playerProgressCookie);
-  console.log("playerProgress", playerProgress);
-
   return NextResponse.json({ reward: playerProgress });
 }
