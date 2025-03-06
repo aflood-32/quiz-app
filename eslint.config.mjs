@@ -13,6 +13,9 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   eslintPluginPrettierRecommended,
+  {
+    ignores: [".next/*", "lint-staged.config.cjs"],
+  },
 ];
 
 export default eslintConfig;

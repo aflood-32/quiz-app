@@ -103,6 +103,7 @@
     height: 100%;
     padding: 0 2.5rem;
     gap: 1rem;
+    color: var(--color-title);
 }
 
 .answer__body:before {

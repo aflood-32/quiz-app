@@ -23,11 +23,11 @@ const SelectAnswer = ({
 
   const onSelectComplete = async (answerId: string) => {
     if (correctAnswerIds.includes(answerId)) {
-      void onCorrectAnswer();
+      await onCorrectAnswer();
       return;
     }
 
-    void onWrongAnswer();
+    await onWrongAnswer();
   };
 
   const onAnswerSelect = async (answerId: string) => {
