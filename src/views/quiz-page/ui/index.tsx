@@ -22,7 +22,9 @@ type QuizPageProps = {
 
 const QuizPage = ({ quizData }: QuizPageProps) => {
   const sidebarData = useSidebarDataSelectors(quizData);
-  const [activeQuestionId, setActiveQuestionId] = useState<string>("q1");
+  const [activeQuestionId, setActiveQuestionId] = useState<string>(
+    quizData.order[0],
+  );
 
   const { nextQuestionId, activeQuestion } = useQuestionDataSelectors(
     activeQuestionId,

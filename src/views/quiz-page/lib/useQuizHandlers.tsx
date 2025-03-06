@@ -20,7 +20,7 @@ const useQuizHandlers = ({
   updatePlayerProgress,
   setActiveQuestionId,
 }: UseQuizHandlersProps) => {
-  const { push } = useRouter();
+  const { push, refresh, replace } = useRouter();
 
   const onWrongAnswer = useCallback(async () => {
     await updatePlayerProgress({ completed: true });
@@ -36,7 +36,10 @@ const useQuizHandlers = ({
     }: OnCorrectAnswerParams) => {
       if (!nextQuestionId) {
         await updatePlayerProgress({ lastQuestionId, reward, completed: true });
-        push("/result");
+
+        replace("/result");
+        // to sync cookies value
+        refresh();
         return;
       }
 

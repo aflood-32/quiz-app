@@ -5,6 +5,8 @@ import { formatCurrency } from "@shared/lib/format-currency";
 export default async function Result() {
   const playerProgress = await getPlayerProgress();
 
+  console.log(playerProgress);
+
   return (
     <InfoSection
       label={`Total score:`}
