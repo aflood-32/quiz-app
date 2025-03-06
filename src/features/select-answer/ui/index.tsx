@@ -1,6 +1,6 @@
 import React, { memo, useState } from "react";
 
-import sleep from "@shared/lib/sleep";
+import index from "@shared/lib/sleep";
 import AnswerButton from "@ui/AnswerButton";
 
 import { ACTIONS_DELAY } from "../lib/actions-delay";
@@ -38,11 +38,11 @@ const SelectAnswer = ({
     setSelectedId(answerId);
     setStatus("checking");
 
-    await sleep(ACTIONS_DELAY);
+    await index(ACTIONS_DELAY);
 
     setStatus("result");
 
-    await sleep(ACTIONS_DELAY);
+    await index(ACTIONS_DELAY);
     void onSelectComplete(answerId);
 
     setStatus("idle");
