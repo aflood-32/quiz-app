@@ -1,5 +1,13 @@
-import HomePage from "@pages/home-page";
+import { InfoSection } from "@widgets/info-section";
 
 export default function Home() {
-  return <HomePage />;
+  return (
+    <InfoSection
+      title={`Who wants to be \na millionaire?`}
+      buttonLabel="Start"
+      href={`/quiz`}
+      withBgImage
+      withImage
+    />
+  );
 }

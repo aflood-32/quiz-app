@@ -1,3 +1,3 @@
 import InfoSection from "./ui";
 
-export default InfoSection;
+export { InfoSection };

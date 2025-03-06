@@ -1,0 +1,12 @@
+.page_container{
+    background: var(--color-page-background);
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+    .page_container{
+        flex-direction: row;
+    }
+}

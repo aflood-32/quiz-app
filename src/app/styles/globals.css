@@ -3,12 +3,14 @@
 :root {
   --color-home-background: #ffffff;
   --color-home-polygon: #FFF3EB;
-  /*--color-page-background: #ffffff;*/
+  --color-page-background: #F5F5F7;
   --color-main: #FF8B37;
   --color-main-dark: #E87928;
   --color-main-light: #FFAC70;
   --color-success: #47D867;
+  --color-success-background: #E6FAEA;
   --color-danger: #EC6259;
+  --color-danger-background: #FDEEED;
   --color-border: #D0D0D8;
   --color-button-label: #fff;
   --color-title: #1C1C21;
@@ -26,4 +28,5 @@ body {
   min-height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
+  color: var(--color-title);
 }

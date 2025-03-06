@@ -1,0 +1,88 @@
+.nav{
+    --line-height: 0.1rem;
+    --line-width: 20%;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    height: 3.2rem;
+    position: relative;
+    flex: 0 0 auto;
+
+    color: var(--color-border);
+
+}
+
+.nav[data-active="true"] ~ .nav{
+    color: var(--color-title);
+}
+
+.nav[data-active="true"]{
+    color: var(--color-main);
+}
+
+.nav[data-active="true"] .nav__background > svg > path{
+    stroke: var(--color-main);
+}
+
+.nav[data-active="true"]::before, .nav[data-active="true"]::after{
+    background: var(--color-main);
+}
+
+.nav:before, .nav:after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: var(--line-height);
+    width: var(--line-width);
+    background: var(--color-border);
+    top: 50%;
+    z-index: 1;
+    pointer-events: none;
+    transform: translate(0, -50%);
+}
+
+.nav:before{
+    left: 0;
+}
+
+.nav:after{
+    right: 0;
+}
+
+.nav__background{
+    position: absolute;
+    left: calc(var(--line-width) - 0.1rem);
+    right: calc(var(--line-width) - 0.1rem);
+    bottom: 0;
+    height: 100%;
+}
+
+.nav__background > svg{
+    display: block;
+    width: 100%;
+    height: inherit;
+}
+
+.nav__background > svg > path {
+    transition: fill ease-in-out 0.2s;
+}
+
+.nav__body{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 2.5rem;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 1280px) {
+    .nav{
+        height: 4rem;
+        font-size: 2rem;
+    }
+}

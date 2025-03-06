@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.6rem;
+}
+
+.header__button{
+    margin-left: auto;
+    position: relative;
+    z-index: 3;
+}
+
+@media screen and (min-width: 1024px) {
+    .header{
+        display: none;
+    }
+}

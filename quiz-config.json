@@ -1,0 +1,149 @@
+{
+  "order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10", "q11", "q12"],
+  "questions": {
+    "q1": {
+      "id": "q1",
+      "title": "What are the primary colors?",
+      "reward": "500",
+      "answers": [
+        { "id": "a1", "text": "Red" },
+        { "id": "a2", "text": "Blue" },
+        { "id": "a3", "text": "Yellow" },
+        { "id": "a4", "text": "Green" }
+      ],
+      "correctAnswerIds": ["a1", "a2", "a3"]
+    },
+    "q2": {
+      "id": "q2",
+      "title": "Which programming languages are statically typed?",
+      "reward": "1000",
+      "answers": [
+        { "id": "a1", "text": "JavaScript" },
+        { "id": "a2", "text": "TypeScript" },
+        { "id": "a3", "text": "C++" },
+        { "id": "a4", "text": "Python" }
+      ],
+      "correctAnswerIds": ["a2", "a3"]
+    },
+    "q3": {
+      "id": "q3",
+      "title": "What is the capital of France?",
+      "reward": "2000",
+      "answers": [
+        { "id": "a1", "text": "Paris" },
+        { "id": "a2", "text": "London" },
+        { "id": "a3", "text": "Berlin" },
+        { "id": "a4", "text": "Madrid" }
+      ],
+      "correctAnswerIds": ["a1"]
+    },
+    "q4": {
+      "id": "q4",
+      "title": "Which planets are considered gas giants?",
+      "reward": "4000",
+      "answers": [
+        { "id": "a1", "text": "Mars" },
+        { "id": "a2", "text": "Jupiter" },
+        { "id": "a3", "text": "Saturn" },
+        { "id": "a4", "text": "Earth" }
+      ],
+      "correctAnswerIds": ["a2", "a3"]
+    },
+    "q5": {
+      "id": "q5",
+      "title": "Who wrote 'To Kill a Mockingbird'?",
+      "reward": "8000",
+      "answers": [
+        { "id": "a1", "text": "Harper Lee" },
+        { "id": "a2", "text": "J.K. Rowling" },
+        { "id": "a3", "text": "George Orwell" },
+        { "id": "a4", "text": "Mark Twain" }
+      ],
+      "correctAnswerIds": ["a1"]
+    },
+    "q6": {
+      "id": "q6",
+      "title": "Which numbers are prime?",
+      "reward": "16000",
+      "answers": [
+        { "id": "a1", "text": "2" },
+        { "id": "a2", "text": "3" },
+        { "id": "a3", "text": "4" },
+        { "id": "a4", "text": "5" }
+      ],
+      "correctAnswerIds": ["a1", "a2", "a4"]
+    },
+    "q7": {
+      "id": "q7",
+      "title": "What is the chemical symbol for Oxygen?",
+      "reward": "32000",
+      "answers": [
+        { "id": "a1", "text": "O" },
+        { "id": "a2", "text": "O2" },
+        { "id": "a3", "text": "Ox" },
+        { "id": "a4", "text": "Om" }
+      ],
+      "correctAnswerIds": ["a1"]
+    },
+    "q8": {
+      "id": "q8",
+      "title": "Which continents are in the Southern Hemisphere?",
+      "reward": "64000",
+      "answers": [
+        { "id": "a1", "text": "Africa" },
+        { "id": "a2", "text": "Asia" },
+        { "id": "a3", "text": "Australia" },
+        { "id": "a4", "text": "South America" }
+      ],
+      "correctAnswerIds": ["a1", "a3", "a4"]
+    },
+    "q9": {
+      "id": "q9",
+      "title": "What is the speed of light?",
+      "reward": "125000",
+      "answers": [
+        { "id": "a1", "text": "299,792 km/s" },
+        { "id": "a2", "text": "150,000 km/s" },
+        { "id": "a3", "text": "3,000 km/s" },
+        { "id": "a4", "text": "1,080 km/h" }
+      ],
+      "correctAnswerIds": ["a1"]
+    },
+    "q10": {
+      "id": "q10",
+      "title": "Which animals are mammals?",
+      "reward": "250000",
+      "answers": [
+        { "id": "a1", "text": "Dolphin" },
+        { "id": "a2", "text": "Shark" },
+        { "id": "a3", "text": "Elephant" },
+        { "id": "a4", "text": "Crocodile" }
+      ],
+      "correctAnswerIds": ["a1", "a3"]
+    },
+    "q11": {
+      "id": "q11",
+      "title": "Who painted the Mona Lisa?",
+      "reward": "500000",
+      "answers": [
+        { "id": "a1", "text": "Vincent van Gogh" },
+        { "id": "a2", "text": "Pablo Picasso" },
+        { "id": "a3", "text": "Leonardo da Vinci" },
+        { "id": "a4", "text": "Michelangelo" }
+      ],
+      "correctAnswerIds": ["a3"]
+    },
+    "q12": {
+      "id": "q12",
+      "title": "What are the main ingredients in traditional sushi?",
+      "reward": "1000000",
+      "answers": [
+        { "id": "a1", "text": "Rice" },
+        { "id": "a2", "text": "Fish" },
+        { "id": "a3", "text": "Cheese" },
+        { "id": "a4", "text": "Seaweed" }
+      ],
+      "correctAnswerIds": ["a1", "a2", "a4"]
+    }
+  }
+}

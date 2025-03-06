@@ -1,0 +1,39 @@
+.loader {
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 30px;
+    display: inline-grid;
+    overflow: hidden;
+}
+
+.loader:before,
+.loader:after {
+    content: "Loading...";
+    grid-area: 1/1;
+    clip-path: inset(0 -200% 50%);
+    text-shadow: -10ch 0 0;
+    animation: l13 2s infinite;
+}
+
+.loader:after {
+    --s: -1;
+    clip-path: inset(50% -200% 0%);
+    text-shadow: 10ch 0 0;
+    animation-delay: 1s;
+}
+
+.loader_screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    background: var(--color-page-background);
+}
+
+@keyframes l13 {
+    25%,
+    100%{
+        transform: translateX(calc(var(--s,1)*100%));
+    }
+}

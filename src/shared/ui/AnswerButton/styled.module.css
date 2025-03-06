@@ -1,0 +1,120 @@
+.answer{
+    --line-height: 0.1rem;
+    --line-width: 1.7rem;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    height: 5.6rem;
+    position: relative;
+    padding: 0 1.7rem;
+    cursor: pointer;
+
+    background: none;
+    border: none;
+}
+
+.answer:hover .answer__background > svg > path{
+    stroke: var(--color-main);
+}
+
+.answer:hover::before,
+.answer:hover::after {
+    background: var(--color-main);
+}
+
+.answer[data-selected="true"] .answer__background > svg > path{
+    fill: var(--color-home-polygon);
+    stroke: var(--color-main);
+}
+
+.answer[data-selected="true"]::before,
+.answer[data-selected="true"]::after {
+    background: var(--color-main);
+}
+
+.answer[data-valid="true"] .answer__background > svg > path{
+    fill: var(--color-success-background);
+    stroke: var(--color-success);
+}
+
+.answer[data-valid="true"]::before,
+.answer[data-valid="true"]::after {
+    background: var(--color-success);
+}
+
+.answer[data-invalid="true"] .answer__background > svg > path{
+    fill: var(--color-danger-background);
+    stroke: var(--color-danger);
+}
+
+.answer[data-invalid="true"]::before,
+.answer[data-invalid="true"]::after {
+    background: var(--color-danger);
+}
+
+.answer:before, .answer:after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: var(--line-height);
+    width: var(--line-width);
+    background: var(--color-border);
+    top: 50%;
+    z-index: 1;
+    pointer-events: none;
+    transform: translate(0, -50%);
+    transition: background ease-in-out 0.2s;
+}
+
+.answer:before{
+    left: 0;
+}
+
+.answer:after{
+    right: 0;
+}
+
+.answer__background{
+    position: absolute;
+    left: calc(var(--line-width) - 0.1rem);
+    right: calc(var(--line-width) - 0.1rem);
+    bottom: 0;
+    height: 100%;
+}
+
+.answer__background > svg{
+    display: block;
+    width: 100%;
+    height: inherit;
+}
+
+.answer__background > svg > path{
+    fill: var(--color-home-background);
+    stroke: var(--color-border);
+    transition: fill ease-in-out 0.2s, stroke ease-in-out 0.2s;
+}
+
+.answer__body{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2.5rem;
+    gap: 1rem;
+}
+
+.answer__body:before {
+    content: counter(answers-counter, upper-alpha);
+    counter-increment: answers-counter;
+    font-weight: 600;
+    color: var(--color-main);
+}
+
+@media screen and (min-width: 1280px) {
+    .answer{
+        height: 7.2rem;
+        font-size: 2rem;
+    }
+}
